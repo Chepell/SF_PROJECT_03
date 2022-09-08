@@ -430,9 +430,9 @@ def split_full_to_train_and_test(full_data, target_feature):
 
     :param full_data: Полный датасет, содержит признак dataset со значениями train, test
     :param target_feature: Имя целевого признака
-    :return: Возвращает кортеж из train и tes датасета
-
+    :return: Возвращает кортеж из train и test датасета
     """
+    
     # Реформатирую порядок столбцов
     full_data = reformat_columns(full_data, target_feature)
 
