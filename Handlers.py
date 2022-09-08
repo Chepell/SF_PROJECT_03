@@ -587,6 +587,6 @@ def target_feature_boxplot_per_category(full_data, target_feature, category_feat
     
     current_train, _ = split_full_to_train_and_test(full_data, target_feature)
 
-    fig = plt.figure(figsize=(18, 14))
-    sns.boxplot(data=current_train, y=target_feature, x=category_feature)
+    fig, ax = plt.figure(figsize=(18, 14))
+    sns.boxplot(data=current_train, y=target_feature, x=category_feature, ax=ax)
     plt.title(target_feature + ' per ' + category_feature)
